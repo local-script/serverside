@@ -21,9 +21,11 @@
         .kayan-yazi {
             white-space: nowrap;
             overflow: hidden;
-            animation: kayanYaziAnimasyonu 10s linear infinite;
+            animation: kayanYaziAnimasyonu 45s linear infinite;
             position: absolute;
             top: 0;
+            width: 100%; /* Tam genişlikte olacak */
+            left: 0; /* Sol kenara yapışık olacak */
         }
 
         @keyframes kayanYaziAnimasyonu {
@@ -54,15 +56,15 @@
 </head>
 <body>
 
-    <div class="kayan-yazi">Bu bir kayan yazı örneğidir.</div>
+    <div class="kayan-yazi">Join our Discord Community for the Latest News!</div>
 
-    <h1>Ortaya Eklenen Başlık</h1>
-    <p>Bu bir örnek yazıdır.</p>
-    <button onclick="redirectToAnotherSite()">Örnek Buton</button>
+    <h1>Astra Serverside</h1>
+    <p>The best ROBLOX serverside on the market.</p>
+    <button onclick="redirectToAnotherSite()">Discord</button>
 
     <script>
         function redirectToAnotherSite() {
-            window.location.href = "https://www.example.com";
+            window.location.href = "https://discord.gg/obfuscator";
         }
     </script>
 
