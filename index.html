@@ -6,19 +6,24 @@
     <title>CSS Animasyonu ile Kayan Yazı</title>
     <style>
         body {
+            position: relative;
+            height: 100vh;
+            margin: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
-            margin: 0;
+            background-color: #333; /* Koyu arka plan rengi */
+            color: #fff; /* Beyaz metin rengi */
+            font-family: Arial, sans-serif; /* Font ayarı */
         }
 
         .kayan-yazi {
             white-space: nowrap;
             overflow: hidden;
             animation: kayanYaziAnimasyonu 10s linear infinite;
-            margin-bottom: 20px;
+            position: absolute;
+            top: 0;
         }
 
         @keyframes kayanYaziAnimasyonu {
@@ -28,6 +33,22 @@
             to {
                 transform: translateX(-100%);
             }
+        }
+
+        h1, p {
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50; /* Yeşil buton rengi */
+            color: #fff; /* Beyaz metin rengi */
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049; /* Butonun hover durumundaki rengi */
         }
     </style>
 </head>
@@ -41,7 +62,6 @@
 
     <script>
         function redirectToAnotherSite() {
-            // Burada istediğiniz siteye yönlendirmeyi yapabilirsiniz.
             window.location.href = "https://www.example.com";
         }
     </script>
